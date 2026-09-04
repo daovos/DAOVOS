@@ -38,7 +38,7 @@
     <path d="M24 220H1176" opacity=".55"/>
   </g>
 
-  <g fill="#ABA6A1" font-size="11" letter-spacing="3">
+  <g fill="#ABA6A1" font-size="14" letter-spacing="2.6">
     <text class="mono" x="48" y="62">DAOVOS / DIGITAL STUDIO</text>
     <text class="mono" x="1152" y="62" text-anchor="end">DESIGN / BUILD / SCALE</text>
     <text class="mono" x="48" y="390">STRUCTURE · PRECISION · PROGRESS</text>
@@ -74,7 +74,7 @@
 
   <g transform="translate(48 326)">
     <rect width="8" height="8" class="status"/>
-    <text class="mono" x="20" y="8" fill="#F4EEE8" font-size="10" letter-spacing="2.4">ACCEPTING SELECTED COMMISSIONS</text>
+    <text class="mono" x="20" y="9" fill="#F4EEE8" font-size="13" letter-spacing="2">ACCEPTING SELECTED COMMISSIONS</text>
   </g>
 
   <g fill="#F4EEE8">

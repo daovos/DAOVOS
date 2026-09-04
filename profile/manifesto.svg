@@ -1,29 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
-  <title id="title">DAOVOS manifesto</title>
-  <desc id="desc">DAOVOS turns ambitious ideas into clear digital experiences.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+  <title id="title">DAOVOS studio field</title>
+  <desc id="desc">An animated bento composition showing DAOVOS turning ideas into digital experiences.</desc>
   <style>
     text { font-family: "Arial Narrow", "Helvetica Neue", Arial, sans-serif; }
     .mono { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
-    .route { stroke-dasharray: 4 11; animation: route 16s linear infinite; }
-    .ring { transform-box: fill-box; transform-origin: center; animation: spin 20s linear infinite; }
-    .mark { animation: breathe 7s cubic-bezier(.65,0,.35,1) infinite; }
-    .dot { animation: pulse 4s cubic-bezier(.16,1,.3,1) infinite; }
-    @keyframes route { to { stroke-dashoffset: -240; } }
+    .star { transform-box: fill-box; transform-origin: center; animation: spin 28s linear infinite; }
+    .orbit { transform-box: fill-box; transform-origin: center; animation: spin-reverse 34s linear infinite; }
+    .wave { stroke-dasharray: 180 24; animation: travel 16s linear infinite; }
+    .phase { animation: pulse 6s cubic-bezier(.65,0,.35,1) infinite; }
+    .p2 { animation-delay: -2s; }
+    .p3 { animation-delay: -4s; }
     @keyframes spin { to { transform: rotate(360deg); } }
-    @keyframes breathe { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
-    @keyframes pulse { 0%,100% { opacity: .25; } 50% { opacity: 1; } }
-    @media (prefers-reduced-motion: reduce) { .route, .ring, .mark, .dot { animation: none !important; } }
+    @keyframes spin-reverse { to { transform: rotate(-360deg); } }
+    @keyframes travel { to { stroke-dashoffset: -408; } }
+    @keyframes pulse { 0%,100% { opacity: .28; } 50% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .star, .orbit, .wave, .phase { animation: none !important; } }
   </style>
-  <rect width="1200" height="430" fill="#0A0A0A"/>
 
+  <rect width="1200" height="600" fill="#0A0A0A"/>
   <g fill="none" stroke="#2B2B2E" stroke-width="1">
-    <path d="M40 40H1160V390H40Z"/>
-    <path d="M708 40V390"/>
-    <path d="M40 112H1160"/>
+    <path d="M40 40H1160V560H40Z"/>
+    <path d="M720 40V560M40 392H1160M720 228H1160M352 392V560"/>
+    <path d="M40 112H720"/>
   </g>
 
-  <text class="mono" x="68" y="82" fill="#ABA6A1" font-size="10" letter-spacing="3">POSITION / 01</text>
-  <text class="mono" x="1132" y="82" fill="#ABA6A1" font-size="10" letter-spacing="3" text-anchor="end">INDEPENDENT DIGITAL STUDIO</text>
+  <text class="mono" x="68" y="84" fill="#ABA6A1" font-size="14" letter-spacing="3">STUDIO FIELD / 01</text>
+  <text class="mono" x="692" y="84" fill="#ABA6A1" font-size="14" letter-spacing="3" text-anchor="end">IDEA → EXPERIENCE</text>
 
   <g fill="#F4EEE8" font-weight="300" letter-spacing="-3">
     <text x="66" y="196" font-size="72">WE TURN IDEAS</text>
@@ -31,32 +33,45 @@
     <text x="66" y="344" font-size="72">EXPERIENCES.</text>
   </g>
 
-  <g aria-label="Animated idea to system illustration">
-    <path class="route" d="M796 252C842 194 888 310 934 252S1026 194 1072 252" fill="none" stroke="#5A5958"/>
-    <path class="route" d="M796 252C842 310 888 194 934 252S1026 310 1072 252" fill="none" stroke="#2B2B2E"/>
+  <g class="star" fill="none" stroke="#F4EEE8" stroke-width="1.4">
+    <polygon points="1007,134 972,141 999,165 965,154 976,188 952,161 945,196 938,161 914,188 925,154 891,165 918,141 883,134 918,127 891,103 925,114 914,80 938,107 945,72 952,107 976,80 965,114 999,103 972,127"/>
+    <circle cx="945" cy="134" r="76" stroke="#5A5958" stroke-dasharray="5 9"/>
+  </g>
+  <circle cx="945" cy="134" r="7" fill="#F4EEE8"/>
+  <text class="mono" x="1132" y="204" fill="#ABA6A1" font-size="14" letter-spacing="3" text-anchor="end">TWELVE POINTS / ONE CENTER</text>
 
-    <g class="ring">
-      <circle cx="796" cy="252" r="64" fill="none" stroke="#5A5958" stroke-dasharray="4 9"/>
-      <circle cx="796" cy="252" r="42" fill="none" stroke="#2B2B2E"/>
-      <path d="M796 178V190M796 314V326M722 252H734M858 252H870" stroke="#ABA6A1"/>
-    </g>
-    <circle class="dot" cx="796" cy="252" r="8" fill="#F4EEE8"/>
-
-    <g transform="translate(934 252) rotate(45)">
-      <rect x="-30" y="-30" width="60" height="60" fill="#111112" stroke="#ABA6A1"/>
-      <rect x="-18" y="-18" width="36" height="36" fill="none" stroke="#2B2B2E"/>
-      <circle cx="0" cy="0" r="4" fill="#F4EEE8"/>
-    </g>
-
-    <g class="mark" transform="translate(1072 252) scale(.43) translate(-511.5 -408)" fill="#F4EEE8">
-      <rect x="478.5" y="240.8" width="66.3" height="162.7"/>
-      <rect x="380.5" y="322.5" width="63.8" height="81"/>
-      <rect x="578.7" y="322.5" width="63.8" height="81"/>
-      <rect x="380.5" y="419.2" width="63.8" height="77.9"/>
-      <rect x="478.5" y="419.2" width="66.3" height="156"/>
-      <rect x="578.7" y="419.2" width="63.8" height="77.9"/>
-    </g>
+  <g transform="translate(760 266)">
+    <text fill="#F4EEE8" font-size="42" letter-spacing="1">DISTINCT</text>
+    <text x="0" y="48" fill="#ABA6A1" font-size="42" letter-spacing="1">BY DEFAULT.</text>
+    <path d="M0 82H340" stroke="#5A5958"/>
+    <circle class="phase" cx="348" cy="82" r="6" fill="#F4EEE8"/>
   </g>
 
-  <text class="mono" x="760" y="362" fill="#ABA6A1" font-size="10" letter-spacing="3">IDEA → SYSTEM</text>
+  <g transform="translate(68 434)" fill="none">
+    <path class="wave" d="M0 56C28 0 56 112 84 56S140 0 168 56s56 56 84 0" stroke="#F4EEE8" stroke-width="2"/>
+    <path d="M0 88H252" stroke="#2B2B2E"/>
+    <circle cx="0" cy="56" r="5" fill="#F4EEE8"/>
+    <circle cx="252" cy="56" r="5" fill="#ABA6A1"/>
+    <text class="mono" x="0" y="116" fill="#ABA6A1" font-size="14" letter-spacing="3">SIGNAL / ALWAYS MOVING</text>
+  </g>
+
+  <g transform="translate(384 434)">
+    <text fill="#F4EEE8" font-size="24" letter-spacing="2">FORM</text>
+    <text x="0" y="44" fill="#ABA6A1" font-size="24" letter-spacing="2">MOTION</text>
+    <text x="0" y="88" fill="#F4EEE8" font-size="24" letter-spacing="2">SYSTEM</text>
+    <path d="M190 0V92M176 16H204M176 76H204" stroke="#5A5958"/>
+  </g>
+
+  <g transform="translate(940 476)" fill="none" stroke="#5A5958">
+    <g class="orbit">
+      <circle r="58" stroke-dasharray="5 9"/>
+      <ellipse rx="126" ry="44"/>
+      <ellipse rx="86" ry="26" transform="rotate(-24)"/>
+    </g>
+  </g>
+  <g transform="translate(940 476)">
+    <circle class="phase" cx="-126" cy="0" r="10" fill="#F4EEE8"/>
+    <circle class="phase p2" cx="0" cy="0" r="18" fill="#ABA6A1"/>
+    <circle class="phase p3" cx="126" cy="0" r="10" fill="#F4EEE8"/>
+  </g>
 </svg>

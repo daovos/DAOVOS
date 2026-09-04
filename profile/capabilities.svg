@@ -1,47 +1,61 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
   <title id="title">What DAOVOS builds</title>
-  <desc id="desc">Custom websites, landing experiences, commerce systems, and interface systems.</desc>
+  <desc id="desc">Custom websites, landing experiences, commerce systems, and interface systems arranged around an animated capability field.</desc>
   <style>
     text { font-family: "Arial Narrow", "Helvetica Neue", Arial, sans-serif; }
     .mono { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
-    .route { stroke-dasharray: 3 13; animation: route 22s linear infinite; }
-    @keyframes route { to { stroke-dashoffset: -320; } }
-    @media (prefers-reduced-motion: reduce) { .route { animation: none !important; } }
+    .route { stroke-dasharray: 5 11; animation: travel 18s linear infinite; }
+    .orbit-a { transform-box: fill-box; transform-origin: center; animation: spin 26s linear infinite; }
+    .orbit-b { transform-box: fill-box; transform-origin: center; animation: spin-reverse 32s linear infinite; }
+    .node { animation: pulse 5s cubic-bezier(.65,0,.35,1) infinite; }
+    .n2 { animation-delay: -1.25s; }
+    .n3 { animation-delay: -2.5s; }
+    .n4 { animation-delay: -3.75s; }
+    @keyframes travel { to { stroke-dashoffset: -320; } }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes spin-reverse { to { transform: rotate(-360deg); } }
+    @keyframes pulse { 0%,100% { opacity: .3; } 50% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .route, .orbit-a, .orbit-b, .node { animation: none !important; } }
   </style>
-  <rect width="1200" height="520" fill="#111112"/>
 
-  <g fill="none" stroke="#2B2B2E" stroke-width="1">
-    <path d="M40 40H1160V480H40Z"/>
-    <path d="M40 148H1160"/>
-    <path d="M600 148V480"/>
-    <path d="M40 314H1160"/>
+  <rect width="1200" height="500" fill="#111112"/>
+  <path d="M40 40H1160M40 460H1160" stroke="#2B2B2E" fill="none"/>
+  <text class="mono" x="68" y="76" fill="#ABA6A1" font-size="14" letter-spacing="3">CAPABILITY CONSTELLATION / 04</text>
+  <text x="66" y="132" fill="#F4EEE8" font-size="52" font-weight="300" letter-spacing="5">WHAT WE BUILD</text>
+
+  <g fill="none" stroke="#5A5958" stroke-width="1">
+    <path class="route" d="M328 218C422 218 448 270 492 286"/>
+    <path class="route" d="M872 196C786 196 754 246 706 276"/>
+    <path class="route" d="M320 384C416 384 450 346 494 326"/>
+    <path class="route" d="M882 392C790 392 754 352 706 326"/>
   </g>
 
-  <text class="mono" x="68" y="78" fill="#ABA6A1" font-size="10" letter-spacing="3">CAPABILITY FIELD / 04</text>
-  <text x="66" y="126" fill="#F4EEE8" font-size="44" font-weight="300" letter-spacing="6">WHAT WE BUILD</text>
-  <text class="mono" x="1132" y="78" fill="#ABA6A1" font-size="10" letter-spacing="3" text-anchor="end">DESIGN / BUILD / SCALE</text>
-
-  <path class="route" d="M70 166H1130" stroke="#5A5958" stroke-width="1"/>
-
-  <g transform="translate(68 214)">
-    <text fill="none" stroke="#2B2B2E" stroke-width="1" font-size="76" font-weight="700">01</text>
-    <text x="104" y="22" fill="#F4EEE8" font-size="30" letter-spacing="1">CUSTOM WEBSITES</text>
-    <text class="mono" x="104" y="56" fill="#ABA6A1" font-size="10" letter-spacing="2">DESIGN + DEVELOPMENT</text>
-  </g>
-  <g transform="translate(628 214)">
-    <text fill="none" stroke="#2B2B2E" stroke-width="1" font-size="76" font-weight="700">02</text>
-    <text x="104" y="22" fill="#F4EEE8" font-size="30" letter-spacing="1">LANDING EXPERIENCES</text>
-    <text class="mono" x="104" y="56" fill="#ABA6A1" font-size="10" letter-spacing="2">LAUNCH + CONVERSION</text>
+  <g transform="translate(600 306)" fill="none">
+    <circle class="orbit-a" r="112" stroke="#5A5958" stroke-dasharray="5 9"/>
+    <circle class="orbit-b" r="78" stroke="#2B2B2E" stroke-dasharray="22 8"/>
+    <path d="M-132 0H132M0-132V132" stroke="#2B2B2E"/>
+    <path d="M-44 0L0-44L44 0L0 44Z" stroke="#ABA6A1"/>
+    <circle r="7" fill="#F4EEE8"/>
+    <circle class="node" cx="-112" cy="0" r="6" fill="#F4EEE8"/>
+    <circle class="node n2" cx="0" cy="-78" r="6" fill="#F4EEE8"/>
+    <circle class="node n3" cx="112" cy="0" r="6" fill="#F4EEE8"/>
+    <circle class="node n4" cx="0" cy="78" r="6" fill="#F4EEE8"/>
   </g>
 
-  <g transform="translate(68 380)">
-    <text fill="none" stroke="#2B2B2E" stroke-width="1" font-size="76" font-weight="700">03</text>
-    <text x="104" y="22" fill="#F4EEE8" font-size="30" letter-spacing="1">COMMERCE SYSTEMS</text>
-    <text class="mono" x="104" y="56" fill="#ABA6A1" font-size="10" letter-spacing="2">STOREFRONTS + GROWTH</text>
+  <g transform="translate(68 204)">
+    <text fill="#F4EEE8" font-size="30">CUSTOM WEBSITES</text>
+    <text class="mono" y="34" fill="#ABA6A1" font-size="14" letter-spacing="2">DESIGN + DEVELOPMENT</text>
   </g>
-  <g transform="translate(628 380)">
-    <text fill="none" stroke="#2B2B2E" stroke-width="1" font-size="76" font-weight="700">04</text>
-    <text x="104" y="22" fill="#F4EEE8" font-size="30" letter-spacing="1">INTERFACE SYSTEMS</text>
-    <text class="mono" x="104" y="56" fill="#ABA6A1" font-size="10" letter-spacing="2">UI/UX + DESIGN SYSTEMS</text>
+  <g transform="translate(1132 182)" text-anchor="end">
+    <text fill="#F4EEE8" font-size="30">LANDING EXPERIENCES</text>
+    <text class="mono" y="34" fill="#ABA6A1" font-size="14" letter-spacing="2">LAUNCH + CONVERSION</text>
+  </g>
+  <g transform="translate(68 370)">
+    <text fill="#F4EEE8" font-size="30">COMMERCE SYSTEMS</text>
+    <text class="mono" y="34" fill="#ABA6A1" font-size="14" letter-spacing="2">STOREFRONTS + GROWTH</text>
+  </g>
+  <g transform="translate(1132 378)" text-anchor="end">
+    <text fill="#F4EEE8" font-size="30">INTERFACE SYSTEMS</text>
+    <text class="mono" y="34" fill="#ABA6A1" font-size="14" letter-spacing="2">UI/UX + DESIGN SYSTEMS</text>
   </g>
 </svg>

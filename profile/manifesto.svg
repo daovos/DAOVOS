@@ -52,7 +52,7 @@
 
   <g transform="translate(68 434)" fill="none">
     <path class="wave" d="M0 56C28 0 56 112 84 56S140 0 168 56s56 56 84 0" stroke="#F4EEE8" stroke-width="2"/>
-    <path d="M0 88H252" stroke="#2B2B2E"/>
+    <path d="M0 96H252" stroke="#2B2B2E"/>
     <circle cx="0" cy="56" r="5" fill="#F4EEE8"/>
     <circle cx="252" cy="56" r="5" fill="#ABA6A1"/>
     <text class="mono" x="0" y="116" fill="#ABA6A1" font-size="14" letter-spacing="3">SIGNAL / ALWAYS MOVING</text>

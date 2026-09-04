@@ -51,7 +51,7 @@
   </g>
 
   <g transform="translate(68 434)" fill="none">
-    <g transform="translate(0 -16)">
+    <g transform="translate(0 -32)">
       <path class="wave" d="M0 56C28 0 56 112 84 56S140 0 168 56s56 56 84 0" stroke="#F4EEE8" stroke-width="2"/>
       <circle cx="0" cy="56" r="5" fill="#F4EEE8"/>
       <circle cx="252" cy="56" r="5" fill="#ABA6A1"/>

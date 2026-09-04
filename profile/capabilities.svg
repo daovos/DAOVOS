@@ -5,10 +5,8 @@
     text { font-family: "Arial Narrow", "Helvetica Neue", Arial, sans-serif; }
     .mono { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
     .route { stroke-dasharray: 3 13; animation: route 22s linear infinite; }
-    .marker { animation: marker 10s cubic-bezier(.65,0,.35,1) infinite alternate; }
     @keyframes route { to { stroke-dashoffset: -320; } }
-    @keyframes marker { to { transform: translateX(1018px); } }
-    @media (prefers-reduced-motion: reduce) { .route, .marker { animation: none !important; } }
+    @media (prefers-reduced-motion: reduce) { .route { animation: none !important; } }
   </style>
   <rect width="1200" height="520" fill="#111112"/>
 
@@ -24,7 +22,6 @@
   <text class="mono" x="1132" y="78" fill="#ABA6A1" font-size="10" letter-spacing="3" text-anchor="end">DESIGN / BUILD / SCALE</text>
 
   <path class="route" d="M70 166H1130" stroke="#5A5958" stroke-width="1"/>
-  <rect class="marker" x="70" y="162" width="8" height="8" fill="#F4EEE8"/>
 
   <g transform="translate(68 214)">
     <text fill="none" stroke="#2B2B2E" stroke-width="1" font-size="76" font-weight="700">01</text>

@@ -4,9 +4,9 @@
   <style>
     text { font-family: "Arial Narrow", "Helvetica Neue", Arial, sans-serif; }
     .mono { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
-    .cursor { animation: cursor 4.6s cubic-bezier(.16,1,.3,1) infinite; }
+    .cursor { animation: cursor 5.6s cubic-bezier(.65,0,.35,1) infinite alternate; }
     .pulse { animation: pulse 3s cubic-bezier(.16,1,.3,1) infinite; }
-    @keyframes cursor { 0%,12% { transform: translateX(0); } 72%,100% { transform: translateX(642px); } }
+    @keyframes cursor { 0%,18% { transform: translateX(0); } 82%,100% { transform: translateX(642px); } }
     @keyframes pulse { 0%,100% { opacity: .28; } 50% { opacity: 1; } }
     @media (prefers-reduced-motion: reduce) { .cursor, .pulse { animation: none !important; } }
   </style>

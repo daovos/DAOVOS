@@ -79,6 +79,7 @@ import { geometryTokens } from './tokens/geometry';
 import { motionTokens } from './tokens/motion';
 
 import { Copy, Check, Eye, Sun, Moon, MoveRight, Layers, Sliders, Play, Code, Compass, ArrowLeft } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App() {
   // Mode: 'website' (Default Hero Section) | 'specimen' (Design System Workbench)
@@ -1090,6 +1091,7 @@ module.exports = {
     </div>
       )}
       <Agentation />
+      <Analytics />
     </>
   );
 }

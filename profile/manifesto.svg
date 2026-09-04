@@ -19,7 +19,7 @@
   </style>
 
   <rect width="1200" height="600" fill="#0A0A0A"/>
-  <g fill="none" stroke="#2B2B2E" stroke-width="1">
+  <g fill="none" stroke="#5A5958" stroke-width="2">
     <path d="M40 40H1160V560H40Z"/>
     <path d="M720 40V560M40 392H1160M720 228H1160M352 392V560"/>
     <path d="M40 112H720"/>
@@ -51,10 +51,12 @@
   </g>
 
   <g transform="translate(68 434)" fill="none">
-    <path class="wave" d="M0 56C28 0 56 112 84 56S140 0 168 56s56 56 84 0" stroke="#F4EEE8" stroke-width="2"/>
+    <g transform="translate(0 -16)">
+      <path class="wave" d="M0 56C28 0 56 112 84 56S140 0 168 56s56 56 84 0" stroke="#F4EEE8" stroke-width="2"/>
+      <circle cx="0" cy="56" r="5" fill="#F4EEE8"/>
+      <circle cx="252" cy="56" r="5" fill="#ABA6A1"/>
+    </g>
     <path d="M0 96H252" stroke="#2B2B2E"/>
-    <circle cx="0" cy="56" r="5" fill="#F4EEE8"/>
-    <circle cx="252" cy="56" r="5" fill="#ABA6A1"/>
     <text class="mono" x="0" y="116" fill="#ABA6A1" font-size="14" letter-spacing="3">SIGNAL / ALWAYS MOVING</text>
   </g>
 

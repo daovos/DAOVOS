@@ -6,6 +6,7 @@
     .mono { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
     .star { transform-box: fill-box; transform-origin: center; animation: spin 28s linear infinite; }
     .orbit { transform-box: fill-box; transform-origin: center; animation: spin-reverse 34s linear infinite; }
+    .orbit-inner { transform-box: fill-box; transform-origin: center; animation: spin 26s linear infinite; }
     .wave { stroke-dasharray: 180 24; animation: travel 16s linear infinite; }
     .phase { animation: pulse 6s cubic-bezier(.65,0,.35,1) infinite; }
     .p2 { animation-delay: -2s; }
@@ -14,7 +15,7 @@
     @keyframes spin-reverse { to { transform: rotate(-360deg); } }
     @keyframes travel { to { stroke-dashoffset: -408; } }
     @keyframes pulse { 0%,100% { opacity: .28; } 50% { opacity: 1; } }
-    @media (prefers-reduced-motion: reduce) { .star, .orbit, .wave, .phase { animation: none !important; } }
+    @media (prefers-reduced-motion: reduce) { .star, .orbit, .orbit-inner, .wave, .phase { animation: none !important; } }
   </style>
 
   <rect width="1200" height="600" fill="#0A0A0A"/>
@@ -62,16 +63,16 @@
     <path d="M190 0V92M176 16H204M176 76H204" stroke="#5A5958"/>
   </g>
 
-  <g transform="translate(940 476)" fill="none" stroke="#5A5958">
-    <g class="orbit">
-      <circle r="58" stroke-dasharray="5 9"/>
-      <ellipse rx="126" ry="44"/>
-      <ellipse rx="86" ry="26" transform="rotate(-24)"/>
-    </g>
+  <g transform="translate(940 476)" fill="none">
+    <path d="M-144 0H144M0-80V80" stroke="#2B2B2E"/>
+    <circle class="orbit" r="74" stroke="#5A5958" stroke-dasharray="5 9"/>
+    <circle class="orbit-inner" r="52" stroke="#ABA6A1" stroke-dasharray="24 10"/>
+    <circle r="28" stroke="#2B2B2E"/>
+    <circle r="5" fill="#F4EEE8"/>
   </g>
   <g transform="translate(940 476)">
     <circle class="phase" cx="-126" cy="0" r="10" fill="#F4EEE8"/>
-    <circle class="phase p2" cx="0" cy="0" r="18" fill="#ABA6A1"/>
+    <circle class="phase p2" cx="0" cy="0" r="14" fill="#ABA6A1"/>
     <circle class="phase p3" cx="126" cy="0" r="10" fill="#F4EEE8"/>
   </g>
 </svg>

@@ -7,7 +7,7 @@
 </div>
 
 <div align="center">
-  <img src="./profile/manifesto.svg?v=20260904-2" width="100%" alt="DAOVOS turns ideas into digital experiences" />
+  <img src="./profile/manifesto.svg?v=20260904-3" width="100%" alt="DAOVOS turns ideas into digital experiences" />
 </div>
 
 <div align="center">

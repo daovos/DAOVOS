@@ -34,14 +34,14 @@
     <text x="66" y="344" font-size="72">EXPERIENCES.</text>
   </g>
 
-  <g transform="translate(0 -24)">
+  <g transform="translate(0 -8)">
     <g class="star" fill="none" stroke="#F4EEE8" stroke-width="1.4">
       <polygon points="1007,134 972,141 999,165 965,154 976,188 952,161 945,196 938,161 914,188 925,154 891,165 918,141 883,134 918,127 891,103 925,114 914,80 938,107 945,72 952,107 976,80 965,114 999,103 972,127"/>
       <circle cx="945" cy="134" r="66" stroke="#5A5958" stroke-dasharray="5 9"/>
     </g>
     <circle cx="945" cy="134" r="7" fill="#F4EEE8"/>
   </g>
-  <text class="mono" x="1132" y="210" fill="#ABA6A1" font-size="14" letter-spacing="3" text-anchor="end">TWELVE POINTS / ONE CENTER</text>
+  <text class="mono" x="1132" y="216" fill="#ABA6A1" font-size="14" letter-spacing="3" text-anchor="end">TWELVE POINTS / ONE CENTER</text>
 
   <g transform="translate(760 286)">
     <text fill="#F4EEE8" font-size="42" letter-spacing="1">DISTINCT</text>

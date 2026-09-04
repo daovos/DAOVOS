@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">DAOVOS manifesto</title>
+  <desc id="desc">DAOVOS turns ambitious ideas into clear digital experiences.</desc>
+  <style>
+    text { font-family: "Arial Narrow", "Helvetica Neue", Arial, sans-serif; }
+    .mono { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
+    .route { stroke-dasharray: 4 11; animation: route 16s linear infinite; }
+    .ring { transform-box: fill-box; transform-origin: center; animation: spin 20s linear infinite; }
+    .tile { transform-box: fill-box; transform-origin: center; animation: breathe 7s cubic-bezier(.65,0,.35,1) infinite; }
+    .tile:nth-child(even) { animation-delay: -3.5s; }
+    .dot { animation: pulse 4s cubic-bezier(.16,1,.3,1) infinite; }
+    @keyframes route { to { stroke-dashoffset: -240; } }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes breathe { 0%,100% { opacity: .42; transform: scale(.92); } 50% { opacity: 1; transform: scale(1); } }
+    @keyframes pulse { 0%,100% { opacity: .25; } 50% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .route, .ring, .tile, .dot { animation: none !important; } }
+  </style>
+  <rect width="1200" height="430" fill="#0A0A0A"/>
+
+  <g fill="none" stroke="#2B2B2E" stroke-width="1">
+    <path d="M40 40H1160V390H40Z"/>
+    <path d="M708 40V390"/>
+    <path d="M40 112H1160"/>
+  </g>
+
+  <text class="mono" x="68" y="82" fill="#ABA6A1" font-size="10" letter-spacing="3">POSITION / 01</text>
+  <text class="mono" x="1132" y="82" fill="#ABA6A1" font-size="10" letter-spacing="3" text-anchor="end">INDEPENDENT DIGITAL STUDIO</text>
+
+  <g fill="#F4EEE8" font-weight="300" letter-spacing="-3">
+    <text x="66" y="196" font-size="72">WE TURN IDEAS</text>
+    <text x="66" y="270" font-size="72">INTO DIGITAL</text>
+    <text x="66" y="344" font-size="72">EXPERIENCES.</text>
+  </g>
+
+  <g aria-label="Animated idea to system illustration">
+    <path class="route" d="M794 252C850 188 916 318 982 252S1092 194 1132 252" fill="none" stroke="#5A5958"/>
+    <path class="route" d="M794 252C850 316 916 186 982 252S1092 310 1132 252" fill="none" stroke="#2B2B2E"/>
+
+    <g class="ring">
+      <circle cx="806" cy="252" r="72" fill="none" stroke="#5A5958" stroke-dasharray="4 9"/>
+      <circle cx="806" cy="252" r="48" fill="none" stroke="#2B2B2E"/>
+      <path d="M806 174V188M806 316V330M728 252H742M870 252H884" stroke="#ABA6A1"/>
+    </g>
+    <circle class="dot" cx="806" cy="252" r="9" fill="#F4EEE8"/>
+
+    <g transform="translate(916 252) rotate(45)">
+      <rect x="-35" y="-35" width="70" height="70" fill="#111112" stroke="#ABA6A1"/>
+      <rect x="-21" y="-21" width="42" height="42" fill="none" stroke="#2B2B2E"/>
+      <circle cx="0" cy="0" r="4" fill="#F4EEE8"/>
+    </g>
+
+    <g transform="translate(1058 252)" fill="#F4EEE8">
+      <rect class="tile" x="-16" y="-70" width="32" height="66"/>
+      <rect class="tile" x="-64" y="-36" width="32" height="32"/>
+      <rect class="tile" x="32" y="-36" width="32" height="32"/>
+      <rect class="tile" x="-64" y="12" width="32" height="32"/>
+      <rect class="tile" x="-16" y="12" width="32" height="64"/>
+      <rect class="tile" x="32" y="12" width="32" height="32"/>
+    </g>
+  </g>
+
+  <text class="mono" x="760" y="362" fill="#ABA6A1" font-size="10" letter-spacing="3">IDEA → SYSTEM</text>
+</svg>

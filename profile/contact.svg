@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-labelledby="title desc">
+  <title id="title">Start a project with DAOVOS</title>
+  <desc id="desc">Have an idea worth building? Contact daovos.corp@gmail.com.</desc>
+  <style>
+    text { font-family: "Arial Narrow", "Helvetica Neue", Arial, sans-serif; }
+    .mono { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
+    .cursor { animation: cursor 4.6s cubic-bezier(.16,1,.3,1) infinite; }
+    .pulse { animation: pulse 3s cubic-bezier(.16,1,.3,1) infinite; }
+    @keyframes cursor { 0%,12% { transform: translateX(0); } 72%,100% { transform: translateX(642px); } }
+    @keyframes pulse { 0%,100% { opacity: .28; } 50% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { .cursor, .pulse { animation: none !important; } }
+  </style>
+  <rect width="1200" height="330" fill="#111112"/>
+  <path d="M40 40H1160V290H40Z" fill="none" stroke="#2B2B2E"/>
+
+  <circle class="pulse" cx="1128" cy="72" r="5" fill="#F4EEE8"/>
+  <text class="mono" x="68" y="76" fill="#ABA6A1" font-size="10" letter-spacing="3">SELECTED COMMISSIONS / OPEN</text>
+
+  <text x="66" y="164" fill="#F4EEE8" font-size="58" font-weight="300" letter-spacing="3">HAVE AN IDEA WORTH BUILDING?</text>
+  <text class="mono" x="68" y="224" fill="#F4EEE8" font-size="13" letter-spacing="3">DAOVOS.CORP@GMAIL.COM</text>
+  <path d="M68 248H742" stroke="#5A5958"/>
+  <rect class="cursor" x="68" y="244" width="32" height="8" fill="#F4EEE8"/>
+  <text class="mono" x="1132" y="224" fill="#ABA6A1" font-size="10" letter-spacing="3" text-anchor="end">START A PROJECT →</text>
+</svg>

@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production build
+dist/
+build/
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+
+# Vercel
+.vercel
+
+# Editor & OS
+.DS_Store
+Thumbs.db
+*.local
+.idea/
+.vscode/
+
+# Local project memory and working artifacts
+vault/
+.agents/
+.playwright-cli/
+backups/
+output/
+BUTTERMAX CLONE/
+*.temp.mjs
+
+.vercel
+.env*

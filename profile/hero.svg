@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="title desc">
+  <title id="title">DAOVOS — Ideas, built digital</title>
+  <desc id="desc">Animated architectural signal field with the six-module DAOVOS emblem.</desc>
+  <style>
+    :root { color-scheme: dark; }
+    text { font-family: "Arial Narrow", "Helvetica Neue", Arial, sans-serif; }
+    .mono { font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace; }
+    .route { stroke-dasharray: 18 12; animation: route 18s linear infinite; }
+    .route-reverse { stroke-dasharray: 8 18; animation: route-reverse 22s linear infinite; }
+    .scan { animation: scan 9s cubic-bezier(.16,1,.3,1) infinite; }
+    .orbit { transform-box: fill-box; transform-origin: center; animation: orbit 24s linear infinite; }
+    .mod { transform-box: fill-box; transform-origin: center; }
+    .m1 { animation: m1 8s cubic-bezier(.16,1,.3,1) infinite; }
+    .m2, .m4 { animation: ml 8s cubic-bezier(.16,1,.3,1) infinite; }
+    .m3, .m6 { animation: mr 8s cubic-bezier(.16,1,.3,1) infinite; }
+    .m5 { animation: m5 8s cubic-bezier(.16,1,.3,1) infinite; }
+    .pulse { animation: pulse 4s cubic-bezier(.16,1,.3,1) infinite; }
+    .status { animation: status 3.2s steps(1,end) infinite; }
+    @keyframes route { to { stroke-dashoffset: -360; } }
+    @keyframes route-reverse { to { stroke-dashoffset: 420; } }
+    @keyframes scan { 0%,16% { transform: translateX(-180px); opacity: 0; } 30%,62% { opacity: .6; } 78%,100% { transform: translateX(1320px); opacity: 0; } }
+    @keyframes orbit { to { transform: rotate(360deg); } }
+    @keyframes m1 { 0%,5% { transform: translateY(-54px); opacity: 0; } 18%,88% { transform: none; opacity: 1; } 100% { transform: translateY(-18px); opacity: 0; } }
+    @keyframes ml { 0%,8% { transform: translateX(-54px); opacity: 0; } 22%,88% { transform: none; opacity: 1; } 100% { transform: translateX(-18px); opacity: 0; } }
+    @keyframes mr { 0%,11% { transform: translateX(54px); opacity: 0; } 25%,88% { transform: none; opacity: 1; } 100% { transform: translateX(18px); opacity: 0; } }
+    @keyframes m5 { 0%,14% { transform: translateY(54px); opacity: 0; } 28%,88% { transform: none; opacity: 1; } 100% { transform: translateY(18px); opacity: 0; } }
+    @keyframes pulse { 0%,100% { opacity: .22; } 50% { opacity: .75; } }
+    @keyframes status { 0%,49% { fill: #F4EEE8; } 50%,100% { fill: #ABA6A1; } }
+    @media (prefers-reduced-motion: reduce) {
+      .route, .route-reverse, .scan, .orbit, .mod, .pulse, .status { animation: none !important; }
+    }
+  </style>
+
+  <rect width="1200" height="440" fill="#0A0A0A"/>
+
+  <g stroke="#2B2B2E" stroke-width="1" fill="none">
+    <path d="M24 24H1176V416H24Z"/>
+    <path d="M24 88H1176M24 352H1176"/>
+    <path d="M248 24V416M600 24V416M952 24V416"/>
+    <path d="M24 220H1176" opacity=".55"/>
+  </g>
+
+  <g fill="#ABA6A1" font-size="11" letter-spacing="3">
+    <text class="mono" x="48" y="62">DAOVOS / DIGITAL STUDIO</text>
+    <text class="mono" x="1152" y="62" text-anchor="end">DESIGN / BUILD / SCALE</text>
+    <text class="mono" x="48" y="390">STRUCTURE · PRECISION · PROGRESS</text>
+    <text class="mono" x="1152" y="390" text-anchor="end">SYSTEM ONLINE / 2026</text>
+  </g>
+
+  <g fill="none" stroke="#5A5958" stroke-width="1.2" opacity=".58">
+    <path class="route" d="M24 130C180 72 308 196 458 136S730 64 876 140s220 50 300-16"/>
+    <path class="route-reverse" d="M24 306c150-74 272 58 424 4s288-134 430-34 224 64 298 16"/>
+    <path class="route" d="M24 166c156-50 284 62 434 14s268-108 420-14 220 48 298 2" opacity=".45"/>
+    <path class="route-reverse" d="M24 270c142-58 280 50 432 6s276-112 422-28 220 58 298 4" opacity=".45"/>
+  </g>
+
+  <rect class="scan" x="0" y="88" width="1" height="264" fill="#F4EEE8"/>
+
+  <g transform="translate(60 136)">
+    <text x="0" y="84" fill="#F4EEE8" font-size="104" font-weight="700" letter-spacing="10">DAOVOS</text>
+    <text x="5" y="130" fill="#ABA6A1" font-size="21" letter-spacing="9">IDEAS, BUILT DIGITAL.</text>
+  </g>
+
+  <g transform="translate(892 108)">
+    <circle class="orbit" cx="104" cy="104" r="93" fill="none" stroke="#5A5958" stroke-width="1" stroke-dasharray="5 9"/>
+    <circle class="pulse" cx="104" cy="104" r="76" fill="none" stroke="#ABA6A1" stroke-width="1"/>
+
+    <g transform="translate(104 104) scale(.5) translate(-511.5 -408)" fill="#F4EEE8">
+      <rect class="mod m1" x="478.5" y="240.8" width="66.3" height="162.7"/>
+      <rect class="mod m2" x="380.5" y="322.5" width="63.8" height="81"/>
+      <rect class="mod m3" x="578.7" y="322.5" width="63.8" height="81"/>
+      <rect class="mod m4" x="380.5" y="419.2" width="63.8" height="77.9"/>
+      <rect class="mod m5" x="478.5" y="419.2" width="66.3" height="156"/>
+      <rect class="mod m6" x="578.7" y="419.2" width="63.8" height="77.9"/>
+    </g>
+    <circle cx="104" cy="104" r="3" fill="#0A0A0A"/>
+  </g>
+
+  <g transform="translate(48 326)">
+    <rect width="8" height="8" class="status"/>
+    <text class="mono" x="20" y="8" fill="#F4EEE8" font-size="10" letter-spacing="2.4">ACCEPTING SELECTED COMMISSIONS</text>
+  </g>
+
+  <g fill="#F4EEE8">
+    <rect x="20" y="216" width="8" height="8"/>
+    <rect x="1172" y="216" width="8" height="8"/>
+    <rect x="596" y="20" width="8" height="8"/>
+    <rect x="596" y="412" width="8" height="8"/>
+  </g>
+</svg>

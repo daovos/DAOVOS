@@ -1,144 +1,171 @@
-# DAOVOS Visual Operating System (VOS) & Living Specimen
+<div align="center">
+  <img src="./profile/hero.svg" width="100%" alt="DAOVOS — Ideas, built digital" />
+</div>
 
-The foundational **Visual Operating System** for **DAOVOS**, a premium architectural and engineering web-development agency.
+<br />
+
+<div align="center">
+  <a href="mailto:daovos.corp@gmail.com">
+    <img src="https://img.shields.io/badge/START_A_PROJECT-DAOVOS.CORP%40GMAIL.COM-F4EEE8?style=for-the-badge&labelColor=111112&color=F4EEE8" alt="Start a project with DAOVOS" />
+  </a>
+  <img src="https://img.shields.io/github/last-commit/daovos/DAOVOS?style=for-the-badge&label=SYSTEM%20UPDATE&labelColor=111112&color=5A5958" alt="Latest DAOVOS system update" />
+</div>
+
+<br />
+
+## We turn ambitious ideas into clear digital experiences.
+
+DAOVOS is an independent digital studio designing and engineering distinctive websites, interfaces, and commerce experiences. We bring strategy, visual direction, interaction, and development into one connected build—so an idea does not lose its character on the way to becoming real.
+
+> **You bring the idea. DAOVOS turns it into a digital experience.**
+
+<br />
+
+<table>
+  <tr>
+    <td width="58%" valign="top">
+      <sub>01 / WHO WE ARE</sub>
+      <h3>Premium without being inaccessible.</h3>
+      <p>We work with startups, growing businesses, creators, personal brands, and ambitious teams that want more than a generic template. Every engagement is shaped around the message, the audience, and the way the business needs to move.</p>
+    </td>
+    <td width="42%" valign="top">
+      <sub>OUR OPERATING PRINCIPLES</sub>
+      <p><strong>STRUCTURE</strong> before decoration.<br />
+      <strong>CLARITY</strong> before complexity.<br />
+      <strong>MOTION</strong> with purpose.<br />
+      <strong>SYSTEMS</strong> built to evolve.</p>
+    </td>
+  </tr>
+</table>
+
+<br />
+
+## What we build
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <sub>01 / DIGITAL HOMES</sub>
+      <h3>Custom websites</h3>
+      <p>Complete digital homes shaped around the brand, its audience, and the way it needs to grow.</p>
+      <code>STRATEGY</code> <code>UI/UX</code> <code>DEVELOPMENT</code>
+    </td>
+    <td width="50%" valign="top">
+      <sub>02 / ONE DECISIVE ROUTE</sub>
+      <h3>Landing experiences</h3>
+      <p>Focused pages for launches, campaigns, products, and ideas that need one message to land clearly.</p>
+      <code>CAMPAIGNS</code> <code>LAUNCHES</code> <code>CONVERSION</code>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <sub>03 / COMMERCE INFRASTRUCTURE</sub>
+      <h3>Commerce systems</h3>
+      <p>Storefronts where identity, product discovery, and buying flow operate as one considered system.</p>
+      <code>STOREFRONTS</code> <code>PRODUCT FLOWS</code> <code>OPTIMIZATION</code>
+    </td>
+    <td width="50%" valign="top">
+      <sub>04 / INTERFACE ARCHITECTURE</sub>
+      <h3>Interface systems</h3>
+      <p>Responsive product interfaces and visual systems designed for consistency at every scale.</p>
+      <code>DESIGN SYSTEMS</code> <code>RESPONSIVE UI</code> <code>PROTOTYPES</code>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <sub>05 / CONTINUOUS CARE</sub>
+      <h3>Redesign and evolution</h3>
+      <p>Sharper structure, better performance, and ongoing improvement for digital products already in motion.</p>
+      <code>REDESIGN</code> <code>MAINTENANCE</code> <code>SCALE</code>
+    </td>
+    <td width="50%" valign="top">
+      <sub>EXPANDING FIELD</sub>
+      <h3>Beyond the website</h3>
+      <p>Brand identity, creative direction, web applications, automation, and digital products as DAOVOS grows.</p>
+      <code>IDENTITY</code> <code>SOFTWARE</code> <code>AUTOMATION</code>
+    </td>
+  </tr>
+</table>
+
+<br />
+
+<div align="center">
+  <img src="./profile/signal.svg" width="100%" alt="DAOVOS process: discover, define, design and build, launch and evolve" />
+</div>
+
+<br />
+
+## One continuous build
+
+| Field | What happens |
+| :--- | :--- |
+| **Discover** | We find the real objective, audience, constraints, and opportunity. |
+| **Define** | We turn the brief into structure, hierarchy, content direction, and a decisive route. |
+| **Design** | We create a visual and interaction system with a distinct point of view. |
+| **Build** | We engineer the responsive experience, motion, performance, and integrations. |
+| **Launch** | We test, refine, release, and leave the system ready to evolve. |
+
+<br />
+
+## The current system
+
+This profile also houses the source for the current DAOVOS digital experience—a motion-led React site where the studio's identity is expressed through procedural geometry, architectural grids, monochrome material, and carefully paced transitions.
+
+<div align="left">
+  <img src="https://img.shields.io/badge/REACT_19-111112?style=flat-square&logo=react&logoColor=F4EEE8" alt="React 19" />
+  <img src="https://img.shields.io/badge/THREE.JS-r185-111112?style=flat-square&logo=threedotjs&logoColor=F4EEE8" alt="Three.js r185" />
+  <img src="https://img.shields.io/badge/GSAP_3-111112?style=flat-square&logo=greensock&logoColor=F4EEE8" alt="GSAP 3" />
+  <img src="https://img.shields.io/badge/VITE_6-111112?style=flat-square&logo=vite&logoColor=F4EEE8" alt="Vite 6" />
+</div>
+
+<details>
+  <summary><strong>Inside the visual operating system</strong></summary>
+  <br />
+
+  - A procedural six-module 3D emblem built with custom Three.js geometry and shaders.
+  - A cinematic opening sequence and choreographed plane transitions.
+  - A pinned studio manifesto and horizontal geometric service atlas.
+  - A strict bone-white and near-black palette with editorial typography.
+  - Motion designed around precision, legibility, and reduced-motion support.
+
+  ```bash
+  npm install
+  npm run dev
+  ```
+</details>
+
+<br />
+
+## The standard
+
+<table>
+  <tr>
+    <td align="center"><strong>STRUCTURE</strong><br /><sub>Every decision has a reason.</sub></td>
+    <td align="center"><strong>PRECISION</strong><br /><sub>Details survive the build.</sub></td>
+    <td align="center"><strong>MODULARITY</strong><br /><sub>Systems remain useful as they grow.</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>RELIABILITY</strong><br /><sub>The experience works in the real world.</sub></td>
+    <td align="center"><strong>SCALE</strong><br /><sub>Built for the next stage, not only today.</sub></td>
+    <td align="center"><strong>PROGRESS</strong><br /><sub>Launch is a starting point.</sub></td>
+  </tr>
+</table>
+
+<br />
+
+<div align="center">
+  <sub>AVAILABLE FOR SELECTED COMMISSIONS</sub>
+  <h2>Have an idea worth building?</h2>
+  <p>Tell us what you are creating, where it needs to go, and what currently stands in the way.</p>
+  <a href="mailto:daovos.corp@gmail.com"><strong>START A PROJECT →</strong></a>
+  <br /><br />
+  <code>daovos.corp@gmail.com</code>
+</div>
+
+<br />
 
 ---
 
-## 1. Brand Synthesis & Character
-
-DAOVOS synthesizes:
-* **Premium Digital Design Studio**
-* **Architectural Practice**
-* **Engineering Company**
-* **Precision Manufacturing**
-* **Editorial Typography**
-
-### Canonical Brand Qualities
-$$\text{STRUCTURE} \;\times\; \text{PRECISION} \;\times\; \text{MODULARITY} \;\times\; \text{RELIABILITY} \;\times\; \text{SCALE} \;\times\; \text{PROGRESS}$$
-
----
-
-## 2. Canonical Color System
-
-### Canonical Brand Palette
-| Token | Name | Hex | RGB | Role |
-| :--- | :--- | :--- | :--- | :--- |
-| `--daovos-color-bone-white` | **Bone White** | `#F4EEE8` | `244, 238, 232` | Canonical light surface & primary background |
-| `--daovos-color-near-black` | **Near Black** | `#111112` | `17, 17, 18` | Canonical dark surface & primary ink |
-| `--daovos-color-warm-stone` | **Warm Stone** | `#ABA6A1` | `171, 166, 161` | Secondary borders & editorial metadata |
-| `--daovos-color-graphite` | **Graphite** | `#5A5958` | `90, 89, 88` | Muted lead-ins & technical tags |
-| `--daovos-color-soft-concrete`| **Soft Concrete**| `#C1BBB6` | `193, 187, 182` | Hairline divisions & subtle panels |
-| `--daovos-color-pure-white` | **Pure White** | `#FFFFFF` | `255, 255, 255` | Peak highlight & dark mode contrast |
-
-### Interface Neutrals
-* **Jet Black**: `#0A0A0A`
-* **Charcoal**: `#171717`
-* **Slate**: `#2B2B2E`
-* **Steel**: `#6B6B6F`
-
----
-
-## 3. 8px Base Spacing System
-
-Base unit: `X = 8px`
-
-| Token | Value | Multiplier | Usage |
-| :--- | :--- | :--- | :--- |
-| `--space-1` | `4px` | `0.5x` | Hairline offsets, badge insets |
-| `--space-2` | `8px` | `1.0x` (Base) | Base unit, control paddings |
-| `--space-3` | `12px` | `1.5x` | Button vertical insets |
-| `--space-4` | `16px` | `2.0x` | Mobile gutters, input fields |
-| `--space-6` | `24px` | `3.0x` | Desktop grid gutters |
-| `--space-8` | `32px` | `4.0x` | Module separation |
-| `--space-12`| `48px` | `6.0x` | Small section spacing |
-| `--space-20`| `80px` | `10.0x` | Standard section rhythm |
-| `--space-32`| `128px`| `16.0x` | Major editorial pauses |
-| `--space-48`| `192px`| `24.0x` | Maximum spatial release |
-
----
-
-## 4. Typography Scale & Hierarchy
-
-* **Display Font**: Editorial Neo-Grotesk (`nm-medium` / Inter Display)
-* **Body Font**: `Inter`, `-apple-system`, `sans-serif`
-* **Monospace Font**: `DM Mono`, `Space Mono`, `monospace`
-
-| Token | Size Range / Clamp | Line Height | Tracking | Role |
-| :--- | :--- | :--- | :--- | :--- |
-| `Display XL` | `clamp(4rem, 2.5rem + 4.5vw, 7.5rem)` | `0.95` | `-0.04em` | Monumental architectural headers |
-| `Display L`  | `clamp(2.75rem, 1.8rem + 3vw, 5rem)` | `1.0` | `-0.03em` | Chapter anchors |
-| `H1`         | `clamp(2.25rem, 1.6rem + 1.8vw, 3.5rem)` | `1.1` | `-0.025em` | Component titles & main subjects |
-| `H2`         | `clamp(1.75rem, 1.3rem + 1.1vw, 2.5rem)` | `1.2` | `-0.02em` | Section sub-headers |
-| `H3`         | `clamp(1.25rem, 1.05rem + 0.6vw, 1.75rem)`| `1.3` | `-0.015em` | Technical subsection heads |
-| `Body L`     | `1.125rem` (18px) | `1.55` | `-0.01em` | Lead editorial text |
-| `Body M`     | `1rem` (16px) | `1.6` | `0` | Interface & description body |
-| `Body S`     | `0.875rem` (14px) | `1.5` | `0.01em` | Secondary footnotes & tables |
-| `Label`      | `0.75rem` (12px) | `1.4` | `0.14em` | Uppercase technical metadata |
-| `Micro`      | `0.625rem` (10px) | `1.3` | `0.20em` | Coordinates & rule stamps |
-
----
-
-## 5. Responsive Grid & Disciplined Asymmetry
-
-* **Desktop (12 Columns)**: 5% external margins, 24px gutters, max-width `1440px`.
-* **Tablet (8 Columns)**: 5% external margins, 24px gutters.
-* **Mobile (4 Columns)**: 4% external margins, 16px gutters.
-* **Asymmetric Formulas**: `5:7`, `7:5`, `4:8`, `3:9`, `8:4`, `2:10`, `1:5:6`.
-
----
-
-## 6. Restrained Geometry & Radii
-
-* **Structural / Editorial**: `0px` (Plumb, sharp, architectural)
-* **Technical Elements**: `2px – 4px` (Registration chips, tags, code snippets)
-* **Interactive Controls**: `6px – 8px` (Buttons, inputs, toggles)
-* **Rule**: Zero arbitrary giant rounded cards or bubbly aesthetics.
-
----
-
-## 7. Imagery Treatment Modes
-
-1. **RAW**: Natural architectural contrast, daylight desaturation (`contrast(1.08) saturate(0.85)`).
-2. **MONOCHROME**: Pure silver and charcoal spectrum (`grayscale(100%) contrast(1.22)`).
-3. **MUTED**: Warm Stone `#ABA6A1` split-tone blend (`sepia(18%) contrast(0.95)`).
-4. **MATERIAL**: Tactile micro-contrast overlay (`contrast(1.3)` + 4px dot lattice).
-5. **HALFTONE / GRAPHIC**: Precision dot-matrix screen raster (`contrast(1.8)` + 5px radial lattice).
-
----
-
-## 8. Motion & Kinetic Architecture
-
-* **Micro**: `160ms` (`--motion-duration-micro`)
-* **Interface**: `360ms` (`--motion-duration-interface`)
-* **Editorial**: `760ms` (`--motion-duration-editorial`)
-* **Cinematic**: `1200ms` (`--motion-duration-cinematic`)
-
-### Dedicated Easing Curves
-* **Precision**: `cubic-bezier(0.16, 1, 0.3, 1)` (Rapid acceleration into crisp mechanical lock)
-* **Mechanical**: `cubic-bezier(0.25, 0, 0, 1)` (Axis displacement with immediate stop)
-* **Settle**: `cubic-bezier(0.65, 0, 0.35, 1)` (Architectural damping)
-* **Sharp**: `cubic-bezier(0.4, 0, 0.2, 1)` (High-velocity tactile response)
-
----
-
-## 9. 6-Module Symbol Motion Laboratory
-
-The DAOVOS symbol consists of six rectangular modules:
-1. **Module 1 (Center Top)**: `478.50, 240.80, 66.30 x 162.70`
-2. **Module 2 (Left Top)**: `380.50, 322.50, 63.80 x 81.00`
-3. **Module 3 (Right Top)**: `578.70, 322.50, 63.80 x 81.00`
-4. **Module 4 (Left Bot)**: `380.50, 419.20, 63.80 x 77.90`
-5. **Module 5 (Center Bot)**: `478.50, 419.20, 66.30 x 156.00`
-6. **Module 6 (Right Bot)**: `578.70, 419.20, 63.80 x 77.90`
-
-Kinetic choreography primitives:
-`LOCKED` $\rightarrow$ `FRAGMENTATION` $\rightarrow$ `SEPARATION` $\rightarrow$ `ALIGNMENT` $\rightarrow$ `CONVERGENCE` $\rightarrow$ `RECONSTRUCTION`.
-
----
-
-## 10. Running the Living Specimen
-
-```bash
-npm run dev
-```
-Visit `http://localhost:3000` to interact with the full living specimen workbench, live token inspector, grid overlay toggle, theme switcher, and motion player.
+<div align="center">
+  <sub>DAOVOS / DESIGN · BUILD · SCALE / 2026</sub>
+</div>

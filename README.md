@@ -24,6 +24,6 @@
 
 <div align="center">
   <a href="mailto:daovos.corp@gmail.com">
-    <img src="./profile/contact.svg" width="100%" alt="Have an idea worth building? Contact DAOVOS" />
+    <img src="./profile/contact.svg?v=20260904-2" width="100%" alt="Have an idea worth building? Contact DAOVOS" />
   </a>
 </div>

@@ -34,6 +34,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Tanker";
+  src: url("/fonts/Tanker-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   /* ==========================================================================
      Font Families

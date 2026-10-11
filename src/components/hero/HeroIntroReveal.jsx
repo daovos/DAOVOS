@@ -12,7 +12,7 @@ import { createPortal } from 'react-dom';
  * Rendered through a portal to document.body so it stays anchored to the
  * viewport even inside ScrollSmoother's transformed content wrapper.
  */
-export const HeroIntroReveal = ({ onComplete }) => {
+export const HeroIntroReveal = ({ onComplete, onExitComplete }) => {
   const [phase, setPhase] = useState('active'); // 'active' | 'revealing' | 'done'
   // Resolve the portal target during the first render. Waiting for useEffect here
   // leaves one browser paint where the blueprint layer is visible before the
@@ -31,13 +31,14 @@ export const HeroIntroReveal = ({ onComplete }) => {
     // 2. Unmount from DOM after all 6 plates fully clear the screen
     const timer2 = setTimeout(() => {
       setPhase('done');
+      onExitComplete?.();
     }, 2650);
 
     return () => {
       clearTimeout(timer1);
       clearTimeout(timer2);
     };
-  }, [onComplete]);
+  }, [onComplete, onExitComplete]);
 
   if (phase === 'done' || !mountNode) return null;
 

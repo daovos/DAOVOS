@@ -1,0 +1,37 @@
+.ripple-transition {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.ripple-transition > canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ripple-transition--interactive {
+  cursor: pointer;
+}
+
+.ripple-transition--interactive:focus-visible {
+  outline: 2px solid #ede6df;
+  outline-offset: 4px;
+}
+
+.hero-ripple-transition-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.58;
+  filter: grayscale(1) contrast(1.1);
+  pointer-events: none;
+  transition: opacity 350ms ease-out;
+}
+
+.hero-ripple-transition-bg.is-complete {
+  opacity: 0;
+}

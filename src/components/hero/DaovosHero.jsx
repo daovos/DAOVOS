@@ -8,10 +8,15 @@ import { HeroIntroReveal } from './HeroIntroReveal';
 import { HeroHud } from './HeroHud';
 import { LineWaves } from './LineWaves';
 import { RippleDistortion } from './RippleDistortion';
+import { RippleTransition } from './RippleTransition';
 import { HeroGrain } from './HeroGrain';
 import { HeroBlueprintReveal } from './HeroBlueprintReveal';
 import { HeroTopRail } from './HeroTopRail';
 import './hero.css';
+
+const HERO_BACKGROUND = '/images/specimens/hero.jpeg';
+// Both texture slots use the original plate: one opening wave, then hover ripples.
+const HERO_RIPPLE_IMAGES = [HERO_BACKGROUND, HERO_BACKGROUND];
 
 /**
  * DAOVOS Master Full-Page Hero Section
@@ -21,14 +26,31 @@ import './hero.css';
 export const DaovosHero = () => {
   const [hasEntered, setHasEntered] = useState(false);
   const [blueprintActive, setBlueprintActive] = useState(true);
+  const [introFinished, setIntroFinished] = useState(false);
+  const [openingRippleComplete, setOpeningRippleComplete] = useState(false);
+  const [openingRippleMounted, setOpeningRippleMounted] = useState(true);
   const sectionRef = useRef(null);
+  const entranceTimers = useRef([]);
 
   // Reveal choreography: intro plates part → blueprint hairlines trace the
   // grid (~1.05s) → hero content lands as the blueprint dissolves.
   const handleIntroComplete = useCallback(() => {
-    setTimeout(() => setHasEntered(true), 1050);
-    setTimeout(() => setBlueprintActive(false), 1250);
+    entranceTimers.current = [
+      setTimeout(() => setHasEntered(true), 1050),
+      setTimeout(() => setBlueprintActive(false), 1250)
+    ];
   }, []);
+  const handleIntroExitComplete = useCallback(() => setIntroFinished(true), []);
+  const handleOpeningRippleComplete = useCallback(() => setOpeningRippleComplete(true), []);
+
+  useEffect(() => () => entranceTimers.current.forEach(clearTimeout), []);
+
+  useEffect(() => {
+    if (!openingRippleComplete) return;
+    // Let the opening layer fade into the original plate, then release its WebGL resources.
+    const handoffTimer = setTimeout(() => setOpeningRippleMounted(false), 350);
+    return () => clearTimeout(handoffTimer);
+  }, [openingRippleComplete]);
 
   // Mouse parallax engine — lerps normalized cursor into --par-x / --par-y.
   // Depth layers consume the vars in hero.css. The 3D canvas is not affected.
@@ -81,12 +103,12 @@ export const DaovosHero = () => {
       }}
     >
       {/* 0. Fullscreen 2D SVG Logo Opening Preloader & Dual-Blade Shutter Reveal */}
-      <HeroIntroReveal onComplete={handleIntroComplete} />
+      <HeroIntroReveal onComplete={handleIntroComplete} onExitComplete={handleIntroExitComplete} />
 
       {/* 0b. Blueprint hairline reveal — grid traces, then dissolves under content */}
       <HeroBlueprintReveal active={blueprintActive} />
 
-      {/* 1a. Ripple Distortion substrate — dimmed concrete plate, cursor ripples through it */}
+      {/* Original mouse-driven water ripples resume after the opening wave. */}
       <div
         className="hero-ripple-bg"
         style={{
@@ -99,7 +121,7 @@ export const DaovosHero = () => {
         }}
       >
         <RippleDistortion
-          src="/images/specimens/hero.jpeg"
+          src={HERO_BACKGROUND}
           brushSize={180}
           strength={0.22}
           swirl={0.8}
@@ -111,12 +133,34 @@ export const DaovosHero = () => {
           glint={0.12}
           tint="#EDE6DF"
           tintAmount={0.05}
-          grayscale={true}
+          grayscale
           trigger="hover"
           quality="medium"
+          enabled={openingRippleComplete}
           style={{ width: '100%', height: '100%' }}
         />
       </div>
+
+      {/* The Componentry wave plays once after the preloader and then unmounts. */}
+      {openingRippleMounted && (
+        <div className={`hero-ripple-transition-bg${openingRippleComplete ? ' is-complete' : ''}`}>
+          <RippleTransition
+            images={HERO_RIPPLE_IMAGES}
+            active={introFinished}
+            startOnReady
+            interactive={false}
+            autoPlay={false}
+            onTransitionComplete={handleOpeningRippleComplete}
+            duration={1.6}
+            pushAmt={0.145}
+            caStrength={0.012}
+            glow={0.65}
+            pinch
+            borderRadius={0}
+            background="#0a0a0d"
+          />
+        </div>
+      )}
 
       {/* 1. LineWaves Background — quieter, slower, masked away from center */}
       <div
@@ -143,7 +187,7 @@ export const DaovosHero = () => {
           color1="#EDE6DF"
           color2="#EDE6DF"
           color3="#EDE6DF"
-          enableMouseInteraction={true}
+          enableMouseInteraction={openingRippleComplete}
           mouseInfluence={2.0}
           style={{ width: '100%', height: '100%' }}
         />

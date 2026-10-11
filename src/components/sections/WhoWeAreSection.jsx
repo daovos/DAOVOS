@@ -359,7 +359,8 @@ export const WhoWeAreSection = () => {
                   {s.index}
                 </span>
               ))}
-              <span className="who-counter-total">/ 04</span>
+              <span className="who-counter-separator">/</span>
+              <span className="who-counter-total">04</span>
             </div>
           </div>
 

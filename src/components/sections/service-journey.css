@@ -71,7 +71,7 @@
 
 .service-journey__header {
   position: absolute;
-  z-index: 30;
+  z-index: 3;
   top: 0;
   right: 2.4vw;
   left: 2.4vw;
@@ -485,13 +485,14 @@
 .service-journey__finale-half { position: absolute; top: 0; bottom: 0; width: 50%; overflow: hidden; padding: clamp(26px, 4.7vh, 48px) 4.5vw clamp(24px, 4vh, 42px); will-change: clip-path; }
 .service-journey__finale-half--dark { left: 0; color: var(--atlas-bone); background: var(--atlas-ink); }
 .service-journey__finale-half--light { right: 0; color: var(--atlas-ink); background: var(--atlas-bone); }
-.service-journey__finale-half header { position: relative; z-index: 4; display: flex; justify-content: space-between; padding-bottom: 18px; border-bottom: 1px solid currentColor; font: 700 9px/1.2 'DM Mono', monospace; letter-spacing: 0.14em; opacity: 0.72; }
-.service-journey__finale-copy { position: absolute; z-index: 4; top: 55%; right: 4.5vw; left: 4.5vw; transform: translateY(-8%); }
+.service-journey__finale-half header { position: relative; z-index: 4; display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding-bottom: 18px; border-bottom: 1px solid currentColor; font: 700 9px/1.4 'DM Mono', monospace; letter-spacing: 0.14em; opacity: 0.72; }
+.service-journey__finale-copy { position: absolute; z-index: 4; top: 53%; right: 4.5vw; left: 4.5vw; }
 .service-journey__finale-copy > p:first-child { margin: 0 0 clamp(18px, 2.6vh, 28px); font: 700 9px/1.2 'DM Mono', monospace; letter-spacing: 0.14em; opacity: 0.58; }
-.service-journey__finale-copy h2 { margin: 0; font-family: 'nm', 'Arial Narrow', sans-serif; font-size: clamp(56px, 5.1vw, 96px); font-weight: 700; line-height: 0.8; letter-spacing: -0.065em; text-transform: uppercase; }
-.service-journey__finale-copy--build h2 { font-size: clamp(48px, 4.25vw, 82px); }
+.service-journey__finale-copy h2 { margin: 0; font-family: 'nm', 'Arial Narrow', sans-serif; font-size: clamp(48px, 5.1vw, 96px); font-weight: 700; line-height: 1.02; letter-spacing: -0.05em; text-transform: uppercase; }
+.service-journey__finale-copy--build h2 { font-size: clamp(36px, 4.05vw, 78px); }
 .service-journey__finale-line { display: block; overflow: hidden; }
 .service-journey__finale-line > span { display: block; will-change: transform; }
+.service-journey__finale-period { display: inline-block; margin-left: 0.16em; }
 .service-journey__finale-half header > span,
 .service-journey__finale-copy > p:first-child,
 .service-journey__finale-note,
@@ -540,9 +541,10 @@
   .service-journey__finale-half header { padding-bottom: 10px; font-size: 7px; }
   .service-journey__finale-half header span:last-child { display: none; }
   .service-journey__finale-copy { top: 48%; right: 20px; left: 20px; transform: translateY(-16%); }
+  .service-journey__finale-copy--build { top: 32%; }
   .service-journey__finale-copy > p:first-child { margin-bottom: 12px; font-size: 7px; }
   .service-journey__finale-copy h2,
-  .service-journey__finale-copy--build h2 { font-size: clamp(38px, 11vw, 52px); line-height: 0.82; }
+  .service-journey__finale-copy--build h2 { font-size: clamp(30px, 9.5vw, 46px); line-height: 1.02; }
   .service-journey__finale-note,
   .service-journey__finale-action p { max-width: 34ch; margin-top: 14px; font-size: 11px; line-height: 1.4; }
   .service-journey__finale-action p { margin-bottom: 12px; }

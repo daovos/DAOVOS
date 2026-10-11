@@ -390,7 +390,7 @@ function Finale() {
         <div className="service-journey__finale-half service-journey__finale-half--dark">
           <header><span>03 // PROJECT INPUT</span><span>YOU / THE IDEA</span></header>
           <div className="service-journey__finale-copy">
-            <p>THE STARTING POINT</p><h2><span className="service-journey__finale-line"><span>YOU BRING</span></span><span className="service-journey__finale-line"><span>THE IDEA.</span></span></h2>
+            <p>THE STARTING POINT</p><h2><span className="service-journey__finale-line"><span>YOU BRING</span></span><span className="service-journey__finale-line"><span>THE IDEA<span className="service-journey__finale-period">.</span></span></span></h2>
             <p className="service-journey__finale-note">Ambition, context, and a reason to make something unmistakably yours.</p>
           </div>
           <footer>IDEA / AMBITION / CONTEXT</footer>
@@ -398,7 +398,7 @@ function Finale() {
         <div className="service-journey__finale-half service-journey__finale-half--light">
           <header><span>DAOVOS / PROJECT OUTPUT</span><span>INTAKE / OPEN</span></header>
           <div className="service-journey__finale-copy service-journey__finale-copy--build">
-            <p>THE BUILT RESPONSE</p><h2><span className="service-journey__finale-line"><span>WE BUILD</span></span><span className="service-journey__finale-line"><span>THE EXPERIENCE.</span></span></h2>
+            <p>THE BUILT RESPONSE</p><h2><span className="service-journey__finale-line"><span>WE BUILD</span></span><span className="service-journey__finale-line"><span>THE EXPERIENCE<span className="service-journey__finale-period">.</span></span></span></h2>
             <div className="service-journey__finale-action"><p>From first interface to long-term care, DAOVOS turns the idea into a clear, durable digital experience.</p><a href="mailto:hello@daovos.com"><span>START A PROJECT</span><span aria-hidden="true">↗</span></a></div>
           </div>
           <footer>DESIGN / DEVELOPMENT / CARE</footer>

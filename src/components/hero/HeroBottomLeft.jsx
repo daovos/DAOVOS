@@ -2,7 +2,7 @@ import React from 'react';
 
 /**
  * DAOVOS Hero Bottom-Left Specification Block
- * Mono technical title with hairline datum + descriptive narrative.
+ * Editorial heading with a quiet section marker and readable narrative.
  */
 export const HeroBottomLeft = ({
   title = 'ARCHITECTURAL DIGITAL SYSTEMS',
@@ -35,9 +35,9 @@ export const HeroBottomLeft = ({
         <span
           style={{
             fontFamily: 'var(--font-family-mono)',
-            fontSize: '9px',
-            letterSpacing: '0.28em',
-            color: 'rgba(244, 238, 232, 0.45)'
+            fontSize: '10px',
+            letterSpacing: '0.16em',
+            color: 'rgba(244, 238, 232, 0.62)'
           }}
         >
           01 // INTRO
@@ -45,23 +45,24 @@ export const HeroBottomLeft = ({
       </div>
       <h3
         style={{
-          fontFamily: 'var(--font-family-mono)',
-          fontSize: '12px',
-          fontWeight: 600,
-          letterSpacing: '0.22em',
-          textTransform: 'uppercase',
+          fontFamily: '"Satoshi", var(--font-family-body)',
+          fontSize: 'clamp(23px, 2.2vw, 30px)',
+          fontWeight: 400,
+          letterSpacing: '-0.025em',
+          lineHeight: 1.15,
           color: 'var(--daovos-color-bone-white)',
-          marginBottom: '12px'
+          margin: '0 0 16px',
+          maxWidth: '16ch'
         }}
       >
-        {title}
+        {title.toLowerCase().replace(/^./, ch => ch.toUpperCase())}
       </h3>
       <p
         style={{
           fontFamily: 'var(--font-family-body)',
-          fontSize: '13px',
-          lineHeight: 1.7,
-          color: 'rgba(244, 238, 232, 0.68)',
+          fontSize: '14px',
+          lineHeight: 1.65,
+          color: 'rgba(244, 238, 232, 0.78)',
           margin: 0,
           maxWidth: '320px'
         }}

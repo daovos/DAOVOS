@@ -625,10 +625,13 @@
   .nav-link { display: none; }
 
   .hero-accent-stacked {
+    top: 0;
+    bottom: 0;
+    transform: none;
     flex-direction: column;
-    justify-content: center;
-    gap: 38vh;
-    padding: 0 24px;
+    justify-content: space-between;
+    gap: 0;
+    padding: 20px 24px;
   }
 
   .hero-bottom-row.flex-row {

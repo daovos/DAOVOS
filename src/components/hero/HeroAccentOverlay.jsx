@@ -66,12 +66,12 @@ export const HeroAccentOverlay = ({
   entered = false
 }) => {
   const displayStyle = {
-    fontFamily: '"Satoshi", var(--font-family-display)',
-    fontSize: 'clamp(2rem, 5.2vw, 5.5rem)',
+    fontFamily: '"Calentha", Georgia, serif',
+    fontSize: 'clamp(2rem, 5.6vw, 6rem)',
     fontWeight: 400,
     lineHeight: 1.0,
     color: '#EDE6DF',
-    letterSpacing: '0.045em',
+    letterSpacing: '0.015em',
     textTransform: 'uppercase',
     textShadow: '0 2px 18px rgba(0, 0, 0, 0.75), 0 1px 2px rgba(0,0,0,0.6)'
   };
